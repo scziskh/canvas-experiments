@@ -1,0 +1,31 @@
+{
+  "homepage": "https://shkarupadc.github.io/3d-scene-editing-app/",
+  "name": "3d-scene-editing-app",
+  "version": "1.0.0",
+  "description": "Application for editing objects on 3d scene resulting from training",
+  "license": "MIT",
+  "dependencies": {
+    "solid-forms": "^0.4.8",
+    "solid-js": "^1.6.15",
+    "solid-styled-components": "^0.28.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-solid": "^0.9.4",
+    "gh-pages": "^5.0.0",
+    "prettier": "2.8.3",
+    "vite": "^4.1.1",
+    "vite-plugin-solid": "^2.5.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint ."
+  }
+}
