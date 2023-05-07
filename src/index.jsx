@@ -1,6 +1,5 @@
 /* @refresh reload */
 import { render } from "solid-js/web";
-import { hashIntegration, Router } from "@solidjs/router";
 
 import "./index.css";
 import App from "./App";
@@ -13,11 +12,4 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-render(
-  () => (
-    <Router source={hashIntegration()}>
-      <App />
-    </Router>
-  ),
-  root
-);
+render(() => <App />, root);
